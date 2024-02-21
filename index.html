@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
     <style>
         body {
             background-color: #333;
@@ -58,10 +59,12 @@
                 left: 0;
                 width: 0;
             }
+
             50% {
                 left: 0;
                 width: 100%;
             }
+
             100% {
                 left: 100%;
                 width: 0;
@@ -71,26 +74,32 @@
         #header-animation {
             background-color: #222;
             color: #fff;
-            animation: header-animation 2s infinite;
         }
 
-        @keyframes header-animation {
-            0% {
-                transform: translateY(0);
+        #heading {
+            color: #ff6600;
+        }
+
+        .education-degree p, .job-description p, .job-duration span, .education-duration span{
+            color: #c7c6c4;
+        }
+
+        @media screen and (max-width: 768px) {
+            .education-duration {
+                float: left;
             }
-            50% {
-                transform: translateY(-10px);
-            }
-            100% {
-                transform: translateY(0);
+            .job-duration {
+                float: left;
             }
         }
     </style>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Tanvir Yeasin Opy</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -121,22 +130,140 @@
     </nav>
 
     <section id="header-animation" class="text-center p-5">
-        <img src="assets/profile.png" alt="Your Name" class="img-fluid rounded-circle" width="200">
+        <img src="assets/profile.png" alt="Your Name" class="img-fluid rounded-circle" width="200" />
         <h1 class="mt-4">Tanvir Yeasin Opy</h1>
-        <p class="lead">I am a fresh graduate from NSU, completed my B.Sc in Computer Science & Engineering scoring 3.81 with the distinction Summa Cum Laude. Since my childhood, I am passionate about computer and games. I consider myself as a good programmer, a problem solver and a quick learner.</p>
+        <h3 class="card-subtitle mb-2 text-muted">Software Engineer</h3>
         <div class="animated-border"></div>
     </section>
 
-    <style>
-        
-    </style>
+    <style></style>
 
     <section id="about" class="p-5">
-        <!-- About section -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 id="heading">About</h2>
+                    <p class="text-justify">
+                        I am a fresh graduate from NSU, completed my B.Sc in Computer
+                        Science & Engineering scoring 3.81 with the distinction Summa Cum
+                        Laude. Since my childhood, I am passionate about computer and
+                        games. I consider myself as a good programmer, a problem solver
+                        and a quick learner.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="education" class="p-5">
-        <!-- Education section -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 id="heading">Education</h2>
+
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="education-degree">
+                                <h4>B.Sc in Computer Science & Engineering</h4>
+                                <p>North South Univeristy</p>
+                                <p>CGPA: 3.81/4.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="education-duration">
+                                <span class="float-right">January 2020 - January 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="education-degree">
+                                <h4>Higher Secondary School Certificate in Science</h4>
+                                <p>Government Science College</p>
+                                <p>GPA: 4.67/5.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="education-duration">
+                                <span class="float-right">June 2017 - July 2019</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="education-degree">
+                                <h4>Secondary School Certificate in Science</h4>
+                                <p>Milestone College</p>
+                                <p>GPA: 5.00/5.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="education-duration">
+                                <span class="float-right">January 2015 - April 2017</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="job" class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 id="heading">Experience</h2>
+
+                    <div class="row mb-4">
+                        <div class="col-md-8">
+                            <div class="job-description">
+                                <h4>Teaching Assistant</h4>
+                                <p>North South Univeristy</p>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <p class="font-italic">Responsibilty:</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="text-justify">Teaching Students JavaScript and helping them with their semester end project. Helping faculty in proctoring and assessment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="job-duration">
+                                <span class="float-right">June 2022 - Continuing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-md-8">
+                            <div class="job-description">
+                                <h4>Web Developer</h4>
+                                <p>ABZ Group BD</p>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <p class="font-italic">Responsibilty:</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="text-justify">Building & maintaining websites using Wordpress with specific regard to the NDY Quality, Assurance, Design Guides and Practice Notes and appropriate statutory regulations and codes of practice.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="job-duration">
+                                <span class="float-right">June 2017 - July 2019</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="experience" class="p-5">
@@ -166,4 +293,5 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
+
 </html>
