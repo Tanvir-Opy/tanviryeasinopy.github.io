@@ -73,14 +73,28 @@
             }
         }
 
+        .skill-border {
+            width: 50px;
+            height: 3px;
+            background-color: silver;
+            margin: 20px auto;
+            position: relative;
+            animation: animated-border 10s infinite;
+        }
+
         #header-animation {
             background-color: #222;
             color: #fff;
         }
 
         #header-animation a {
-            color: #787878;
+            color: rgb(122, 121, 121);
             gap: 20px;
+        }
+
+        #header-animation a:hover {
+            color: #ffffff;
+            text-decoration: none;
         }
 
         #heading {
@@ -92,11 +106,15 @@
         .job-duration span,
         .education-duration span,
         .project p{
-            color: #c7c6c4;
+            color: silver;
         }
 
         #projects a {
             color: #ffcc00a6;
+        }
+
+        #projects a:hover {
+            color: #ffcc00;
         }
 
         @media screen and (max-width: 768px) {
@@ -498,6 +516,116 @@
 
     <section id="skills" class="p-5">
         <!-- Skills section -->
+        <div class="container">
+            <h2 id="heading">Skills</h2>
+            <div class="col-md-12">
+                <div class="row text-center mb-4">
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <i class="devicon-javascript-plain h1"></i>
+                            <h5>JavaScript</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <i class="devicon-java-plain h1"></i>
+                            <h5>Java</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <i class="devicon-python-plain h1"></i>
+                            <h5>Python</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-center mb-2">
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <i class="devicon-dart-plain h1"></i>
+                            <h5>Dart</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <i class="devicon-c-plain h1"></i>
+                            <h5>C</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <i class="devicon-cplusplus-plain h1"></i>
+                            <h5>C++</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-border"></div>
+
+                <div class="row text-center mb-4">
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <i class="devicon-react-original h1 fa-spin"></i>
+                            <h5>React</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <i class="devicon-nextjs-plain h1"></i>
+                            <h5>Next.js</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <i class="devicon-flutter-plain h1"></i>
+                            <h5>Flutter</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-border"></div>
+
+                <div class="row text-center mb-4">
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <i class="devicon-nodejs-plain h1"></i>
+                            <h5>Node.js</h5>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <i class="devicon-flask-plain h1"></i>
+                            <h5>Flask</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-border"></div>
+
+                <div class="row text-center mb-4">
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <i class="devicon-mongodb-plain h1"></i>
+                            <h5>MongoDB</h5>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="skill">
+                            <i class="devicon-mysql-plain h1"></i>
+                            <h5>MySQL</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
     </section>
 
     <section id="activities" class="p-5">
